@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Utility classes */
+.my {
+  margin-top: 14px;
+}
+.center {
+  text-align: center;
+}
+ul {
+  display: flex;
+  background-color: black;
+}
+ul li {
+  list-style-type: none;
+  border: 2px solid black;
+  margin: 2px 5px;
+  padding: 5px 12px;
+  color: white;
+  border-radius: 9px;
+}
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+ul li:hover {
+  background-color: white;
+}
+ul li:hover a {
+  color: black;
+}
+.container {
+  width: 85vw;
+  margin: auto;
+}
+#heading {
+  text-align: center;
+}
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding: 5px;
+  outline: none;
+  margin: 5px 0;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: blanchedalmond;
+}
+.label {
+  font-size: 1.5rem;
+  padding-left: 2px;
+}
+.btn {
+  padding: 5px 10px;
+  width: 100px;
+  margin: 5px;
+  border: 2px solid black;
+  background-color: rgb(67, 67, 240);
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: rgb(113, 113, 238);
+  width: 101px;
+}
+.allNotes {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  grid-gap: 15px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.allNotes > div {
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: blanchedalmond;
+}
+.content {
+  border: 2px soild black;
+}
+body {
+  height: 120vh;
+  background-color: rgb(161, 243, 179);
+}
+.para {
+  text-align: justify;
+  margin: 2px;
+  padding: 10px 0;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 5px;
+  background-color: black;
+  text-align: center;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+/* Responsiveness */
+
+@media screen and (max-width: 600px) and (min-width: 401px) {
+  body {
+    background-color: rgb(179, 179, 235);
+  }
+  .allNotes {
+    grid-template-columns: repeat(2, 49%);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-color: rgb(191, 236, 170);
+  }
+  .allNotes {
+    grid-template-columns: repeat(1, 100%);
+  }
+}

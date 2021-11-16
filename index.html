@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li><a href="">NotesApp</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+    </nav>
+    <div class="container my">
+      <h1 id="heading" class="my">My Notes...</h1>
+      <div>
+        <label for="title" class="label">Title</label>
+        <input
+          type="text"
+          name="title"
+          placeholder="Write your title here"
+          id="title"
+        />
+        <label for="note" class="label">Note</label>
+        <textarea
+          name="note"
+          id="note"
+          cols="30"
+          placeholder="Write your note here"
+          rows="7"
+        ></textarea>
+        <button id="submit" class="btn btn-submit">Add</button>
+      </div>
+
+      <div class="allNotes my" id="allnotes"></div>
+    </div>
+    <footer class="footer" id="footer">
+     
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
